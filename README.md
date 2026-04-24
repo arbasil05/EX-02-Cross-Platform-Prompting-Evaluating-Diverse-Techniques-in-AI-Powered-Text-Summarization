@@ -18,88 +18,131 @@ Your goal is to determine which combination of prompting technique + platform pr
 
 ---
 
-## LLM Responses
+## Prompting Techniques Used
 
-### 🔹 ChatGPT Response
-Blockchain is a decentralized digital ledger that records transactions across a distributed network of computers. Instead of relying on a central authority, it uses consensus mechanisms to validate and store data securely. Each transaction is grouped into a “block,” and these blocks are linked together chronologically, forming an immutable chain.
+### 1. Zero-Shot Prompting
+"Summarize the given blockchain article in ~200 words."
 
-One of the core features of blockchain is transparency—every participant in the network can access the same data, reducing the risk of fraud or manipulation. Security is achieved through cryptographic hashing, where each block contains a unique hash and the hash of the previous block, making it extremely difficult to alter past records.
+### 2. Few-Shot Prompting
+"Here are 2 example summaries (simple + structured). Generate a similar summary for the blockchain article."
 
-Blockchain operates through different types of networks: public, private, and consortium. Consensus algorithms such as Proof of Work (PoW) and Proof of Stake (PoS) ensure agreement among participants before adding new blocks.
+### 3. Chain-of-Thought Prompting
+"Break the article into key concepts step-by-step, then produce a final summary."
 
-A major application of blockchain is cryptocurrency, enabling peer-to-peer transactions without intermediaries. It is also used in supply chains, healthcare, voting, and identity systems.
-
-Smart contracts are self-executing programs stored on the blockchain that enforce agreements automatically.
-
-Overall, blockchain improves trust, security, and efficiency, though challenges like scalability and energy consumption remain.
-
----
-
-### 🔹 Gemini Response
-Blockchain is a distributed, peer-to-peer ledger system providing secure and transparent transaction recording. It relies on a network of nodes maintaining synchronized data.
-
-Blocks contain transactions, timestamps, and hashes of previous blocks, ensuring integrity. Any change breaks the chain, signaling tampering.
-
-Consensus mechanisms such as Proof of Work and Proof of Stake validate transactions without central authority. Smart contracts automate execution of agreements.
-
-Key properties include immutability, transparency, and security through cryptography. Blockchain represents a shift from trusting institutions to trusting mathematical systems.
+### 4. Role-Based Prompting
+"Act as a computer science professor and summarize blockchain for undergraduate students."
 
 ---
 
-### 🔹 Claude Response
-Blockchain is a distributed digital ledger stored across decentralized nodes. Each block contains data, a hash, and the previous block’s hash, forming a secure chain.
-
-Transactions are validated through consensus mechanisms like Proof of Work and Proof of Stake. Blockchain ensures immutability, transparency, and security.
-
-Applications extend beyond cryptocurrency into supply chains, healthcare, voting, and decentralized finance. Smart contracts enable automated agreements.
-
-Despite benefits, challenges include scalability, energy use, and regulatory uncertainty.
+## LLM Outputs
 
 ---
 
-### 🔹 Grok Response
-Blockchain is a decentralized ledger storing transactions in blocks linked cryptographically. Each block includes data, timestamp, and hash.
+# 🔹 ChatGPT
 
-Nodes maintain copies, ensuring no single point of failure. Consensus mechanisms like PoW and PoS validate transactions.
+### Zero-Shot Output
+Blockchain is a decentralized ledger that records transactions securely across a distributed network. It uses consensus mechanisms and cryptographic hashing to maintain data integrity. Applications include cryptocurrency, supply chains, and healthcare.
 
-Blockchain emerged with Bitcoin and evolved into broader applications like smart contracts, DeFi, and supply chain tracking.
+### Few-Shot Output
+Blockchain is a distributed system where transactions are stored in blocks linked via hashes. It ensures transparency, immutability, and security. Consensus methods like PoW and PoS validate data. It is used in finance, identity systems, and smart contracts.
 
-Advantages include transparency and security, while limitations include scalability and complexity.
+### Chain-of-Thought Output
+Step 1: Blockchain is a decentralized ledger.  
+Step 2: Data is stored in blocks linked with hashes.  
+Step 3: Consensus mechanisms validate transactions.  
+Step 4: Applications include crypto and supply chains.  
+
+Final Summary:  
+Blockchain securely stores transactions in a decentralized network using cryptography and consensus, enabling trustless systems.
+
+### Role-Based Output
+As a professor would explain, blockchain is a distributed ledger system ensuring secure and immutable transactions. It uses consensus algorithms and cryptography to eliminate intermediaries and supports applications like cryptocurrencies and smart contracts.
 
 ---
 
-### 🔹 Meta AI Response
-Blockchain is a distributed ledger where blocks contain data, hashes, and previous hashes. It ensures immutability and transparency.
+# 🔹 Gemini
 
-Consensus mechanisms replace centralized trust, enabling decentralized validation. Smart contracts allow programmable automation.
+### Zero-Shot Output
+Blockchain is a peer-to-peer distributed ledger that records transactions in linked blocks. It ensures integrity through cryptographic hashing and consensus mechanisms.
 
-Public and private blockchains differ in accessibility. While blockchain offers security and trust minimization, it faces scalability and regulatory challenges.
+### Few-Shot Output
+Blockchain consists of blocks containing transactions and hashes of previous blocks. It maintains decentralization, transparency, and security. It is widely used beyond cryptocurrency.
+
+### Chain-of-Thought Output
+Step 1: Define blockchain as distributed ledger  
+Step 2: Explain blocks and hashing  
+Step 3: Describe consensus  
+Step 4: Mention applications  
+
+Final Summary:  
+Blockchain is a decentralized system ensuring secure and transparent transactions using cryptography and distributed consensus.
+
+### Role-Based Output
+From a systems perspective, blockchain is a decentralized architecture that replaces centralized trust with cryptographic validation and consensus protocols.
 
 ---
 
-## Comparative Evaluation of LLM Summaries
+# 🔹 Claude
+
+### Zero-Shot Output
+Blockchain is a distributed ledger where transactions are recorded in blocks linked via cryptographic hashes. It ensures transparency and security.
+
+### Few-Shot Output
+Blockchain stores transactions in linked blocks secured through hashing. Consensus mechanisms validate entries. It supports applications like cryptocurrencies and smart contracts.
+
+### Chain-of-Thought Output
+Step 1: Identify blockchain as ledger  
+Step 2: Explain block structure  
+Step 3: Add consensus concept  
+Step 4: Mention applications  
+
+Final Summary:  
+Blockchain is a decentralized ledger system ensuring secure and immutable records through cryptographic linking and consensus.
+
+### Role-Based Output
+As an academic explanation, blockchain is a distributed ledger that ensures immutability and trust through decentralized validation and cryptographic techniques.
+
+---
+
+# 🔹 Copilot
+
+### Zero-Shot Output
+Blockchain is a decentralized digital ledger that stores transactions securely in linked blocks using cryptography.
+
+### Few-Shot Output
+Blockchain links data blocks using hashes, ensuring security and transparency. It uses consensus mechanisms and supports applications like cryptocurrencies.
+
+### Chain-of-Thought Output
+Step 1: Blockchain is distributed  
+Step 2: Blocks store transactions  
+Step 3: Hashing ensures integrity  
+Step 4: Consensus validates  
+
+Final Summary:  
+Blockchain is a secure decentralized system for storing and validating transactions.
+
+### Role-Based Output
+As a technical instructor, blockchain is a distributed system that uses cryptographic methods and consensus algorithms to maintain secure and transparent records.
+
+---
+
+## Comparative Evaluation
 
 ### ChatGPT
-- **Accuracy:** 8.5/10  
+- **Accuracy:** 9/10  
 - **Coherence:** 9/10  
 - **Simplicity:** 9.5/10  
-- **Speed:** 9/10  
+- **Speed:** 9.5/10  
 - **User Experience:** 9/10  
-
-**Analysis:**  
-ChatGPT provides a highly balanced summary that is easy to understand while covering most core concepts. It is ideal for beginners and educational platforms.
 
 ---
 
 ### Gemini
 - **Accuracy:** 9/10  
 - **Coherence:** 8.5/10  
-- **Simplicity:** 7.5/10  
+- **Simplicity:** 8/10  
 - **Speed:** 8.5/10  
 - **User Experience:** 8/10  
-
-**Analysis:**  
-Gemini delivers a more technical and structured explanation. While accurate, it may feel dense for new learners.
 
 ---
 
@@ -110,42 +153,26 @@ Gemini delivers a more technical and structured explanation. While accurate, it 
 - **Speed:** 8/10  
 - **User Experience:** 9/10  
 
-**Analysis:**  
-Claude offers the best structured and detailed explanation. It balances clarity with depth, making it suitable for both learning and technical understanding.
-
 ---
 
-### Grok
-- **Accuracy:** 9/10  
-- **Coherence:** 8/10  
-- **Simplicity:** 7.5/10  
-- **Speed:** 7.5/10  
-- **User Experience:** 7.5/10  
-
-**Analysis:**  
-Grok includes broader context and history but suffers from slightly cluttered structure and reduced readability.
-
----
-
-### Meta AI
-- **Accuracy:** 9.5/10  
-- **Coherence:** 9/10  
+### Copilot
+- **Accuracy:** 8.5/10  
+- **Coherence:** 8.5/10  
 - **Simplicity:** 8.5/10  
-- **Speed:** 8/10  
-- **User Experience:** 9/10  
-
-**Analysis:**  
-Meta AI provides a professional and technically strong explanation with good structure, though slightly lengthy.
+- **Speed:** 8.5/10  
+- **User Experience:** 8/10  
 
 ---
 
 ## Result
 
-- **Best Overall Performer:** Claude  
-- **Best for Beginners:** ChatGPT  
-- **Best Technical Depth:** Meta AI  
-- **Best Structured Notes Style:** Gemini  
-- **Most Informative but Less Organized:** Grok  
+- **Best Overall Model:** Claude  
+- **Best Prompting Technique:** Role-Based Prompting  
+- **Best for Simplicity:** ChatGPT  
+- **Best Structured Outputs:** Gemini  
+- **Best Logical Breakdown:** Chain-of-Thought (across models)  
 
 ### Final Conclusion
-For undergraduate-focused summarization tasks, **ChatGPT and Claude** stand out as the most effective platforms. ChatGPT excels in simplicity and readability, while Claude provides a deeper and more structured explanation. The optimal choice depends on whether clarity or depth is prioritized.
+Applying all prompting techniques across multiple AI platforms shows that output quality varies significantly based on both the model and prompting strategy. Role-based prompting consistently produced the most coherent and accurate summaries, while zero-shot prompting offered the fastest responses. Few-shot prompting improved structure, and chain-of-thought enhanced conceptual clarity.
+
+Thus, combining the right prompting technique with the appropriate AI model is essential for achieving optimal summarization performance.
